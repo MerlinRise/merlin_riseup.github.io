@@ -40,7 +40,7 @@ Menglin Kong, Muzhou Hou, Shaojie Zhao, Feng Liu, Ri Su, Yinghao Chen. *Expert S
 
 ### Images
 <div style="display: flex; flex-direction: row; gap: 20px; justify-content: center;">
-<img src="images/dadin1.jpg" alt="Figure 1: dadin" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 5px;">
+<img src="images/dadin1.png" alt="Figure 1: dadin" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 5px;">
 </div>
 
 <details>
