@@ -74,7 +74,7 @@ Cross-domain recommendation aims to leverage heterogeneous information to transf
 </details>
 
 - Access our paper via: [[ACM](https://dl.acm.org/doi/abs/10.1145/3616855.3635809)].
-- 
+  
 - Codes are available: [GitHub repo](https://github.com/KongMLin/C2DR).
 
 <br/>
