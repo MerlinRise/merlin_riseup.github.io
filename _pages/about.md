@@ -10,27 +10,23 @@ redirect_from:
 
 ---
 
-I'm a Ph.D. candidate at McGill University under the supervision of Prof. [Lijun Sun](https://lijunsun.github.io/).
-I was a visiting researcher at the Robotics Institute, Carnegie Mellon University in 2023 under the supervision of Prof.
-Changliu Liu, and at the Department of Mechanical Engineering in 2018. Additionally, I conducted research at the
-Department of Mechanical Engineering, UC Berkeley from 2019 to 2020 under the supervision of Prof. Masayoshi Tomizuka.
+  I’m a Ph.D. student at McGill University under the supervision of Prof. [Lijun Sun](https://lijunsun.github.io/).
+  I received my Master's degree in Applied Statistics from Central South University in 2024, under the supervision
+  of Prof. [Muzhou Hou](https://faculty.csu.edu.cn/houmuzhou/en/index.htm). In 2021, I earned my Bachelor's degree
+  in Economic Statistics from Hainan University. 
 
-My research focuses on Bayesian learning, spatiotemporal modeling, traffic flow theory, and multi-agent interaction
-modeling within intelligent transportation systems, with an emphasis on bridging the gap between theoretical modeling
-and practical traffic simulation through advanced statistical techniques. My motivation lies in advancing the
-understanding of human driving behaviors to improve microscopic traffic simulations, ultimately contributing to safer
-and more efficient transportation systems.
-
-👋 Please feel free to contact me to schedule a quick discussion if you are interested in collaborating with me.
+  My research interests include recommender systems, time series modeling, probabilistic machine learning, and Gaussian
+  processes. During my master's studies, my research focused on understanding the negative transfer issue in cross-domain
+  recommender systems from a statistical perspective and designing robust cross-domain recommender system models. Recently,
+  my research has shifted toward combining deep learning and statistical models to achieve efficient covariance learning
+  in spatiotemporal and multivariate process modeling.
 
 
 News
 =====
-* <span style="color:darkred"> New! </span> I received the **CIRRELT Doctoral Scholarship of Excellence - Final Stages**. Thanks, CIRRELT!
-* <span style="color:darkred"> New! </span> Our paper "Calibrating Car-Following Models via Bayesian Dynamic Regression" has been selected for the PODIUM presentation at the 25th International Symposium on Transportation and Traffic Theory ([ISTTT25](https://limos.engin.umich.edu/isttt25/)) and also accepted at Transportation Research: Part C ([TR PartC](https://authors.elsevier.com/sd/article/S0968-090X(24)00240-7)). See you in Ann Arbor! [[arXiv](https://arxiv.org/pdf/2307.03340.pdf)] [[slides](./files/ISTTT25_slides_Chengyuan.pdf)]
-* <span style="color:darkred"> New! </span> I have won the **Honorable Mention Award** for the [2024 Clifford Spiegelman Student Paper Competition](https://community.amstat.org/tsig/events/papercompetition). Thanks, the TSIG of the American Statistical Association!
-* <span style="color:darkred"> New! </span> Our paper "Bayesian Calibration of the IDM" was accepted to IEEE Transactions on Intelligent Transportation Systems. [[IEEE TITS](https://ieeexplore.ieee.org/document/10415310)][[arXiv](https://arXiv.org/abs/2210.03571)] [[code](https://github.com/Chengyuan-Zhang/IDM_Bayesian_Calibration)] [[presentation](https://youtu.be/GIqcL6I7MsU)] [[poster](../files/TRB_poster_MA_IDM_Chengyuan_2022.pdf)]
-
+* <span style="color:darkred"> New! </span> I received the **MEITA Scholarship** and started my Ph.D. studies in the Department of Civil Engineering at McGill University.
+* <span style="color:darkred"> New! </span> I was awarded the **Outstanding Graduate Student Award** from Central South University and the **Outstanding Graduate Award** of Hunan Province.  
+* <span style="color:darkred"> New! </span> I successfully defended my thesis and received a Master's degree in Applied Statistics from the School of Mathematics and Statistics, Central South University.
 <button onclick="window.location.href='https://chengyuan-zhang.github.io/news/';">Read more</button>
 
 <p>&nbsp;</p>
@@ -38,129 +34,49 @@ News
 Featured Research
 ======
 
-## Bayesian Calibration of the Car-Following Models
+## DADIN: Domain Adversarial Deep Interest Network for cross-domain recommender systems
 
-Chengyuan Zhang and Lijun Sun. *IEEE Transaction on Intelligent Transportation Systems.*
+Menglin Kong, Muzhou Hou, Shaojie Zhao, Feng Liu, Ri Su, Yinghao Chen. *Expert Systems with Applications.*
 
-<iframe width="640" height="400" src="https://www.youtube.com/embed/GIqcL6I7MsU" title="Chengyuan Zhang: Bayesian Calibration of the Intelligent Driver Model | TFTC General Webinar Series" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+### Images
+<div style="display: flex; flex-direction: row; gap: 20px; justify-content: center;">
+<img src="images/dadin1.jpg" alt="Figure 1: dadin" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 5px;">
+</div>
 
 <details>
-  <summary><b>[Abstract]</b></summary>
-
-Accurate calibration of car-following models is essential for understanding human driving behaviors and implementing
-high-fidelity microscopic simulations. This work proposes a memory-augmented Bayesian calibration technique to capture
-both uncertainty in the model parameters and the temporally correlated behavior discrepancy between model predictions
-and observed data. Specifically, we characterize the parameter uncertainty using a hierarchical Bayesian framework and
-model the temporally correlated errors using Gaussian processes. We apply the Bayesian calibration technique to the
-intelligent driver model (IDM) and develop a novel stochastic car-following model named memory-augmented IDM (MA-IDM).
-To evaluate the effectiveness of MA-IDM, we compare the proposed MA-IDM with Bayesian IDM in which errors are assumed to
-be i.i.d., and our simulation results based on the HighD dataset show that MA-IDM can generate more realistic driving
-behaviors and provide better uncertainty quantification than Bayesian IDM. By analyzing the lengthscale parameter of the
-Gaussian process, we also show that taking the driving actions from the past five seconds into account can be helpful in
-modeling and simulating the human driver’s car-following behaviors.
+<summary><b>Abstract</b></summary>
+The cross-domain recommendation (CDR) model addresses challenges such as data sparsity, the long tail distribution of user–item interactions, and the cold start of items or users. However, solely transferring domain-shared knowledge based on the co-occurrence patterns, without considering user preferences, leads to negative transfer in CDR. To overcome these limitations, we propose an advanced deep learning CDR model called the Domain Adversarial Deep Interest Network (DADIN) aims to facilitate smooth knowledge transfer from the source domain to the target domain and effectively alleviate negative transfer. Firstly, the joint distribution alignment of user preference in DADIN is realized by introducing a skip-connection-based domain agnostic layer, and then the domain classifier is artificially designed to distinguish between the information coming from the source domain or the target domain. Additionally, DADIN combines prediction loss, global domain confusion loss, and intra-class domain confusion losses through the Min-Max game and gradient reverse layer to achieve collaborative optimization. Two real-world experiments show the area under curve (AUC) of DADIN is 0.78 on the Huawei dataset, and it outperforms its competitors by 0.71% on the Amazon dataset, showcasing its state-of-the-art performance. Moreover, our ablation studies further demonstrate that domain adversarial technique increases the AUC by 2.34% on the Huawei dataset and 16.67% on the Amazon dataset, respectively.
 </details>
 
 - Access our preprint via:
-  GP+IDM [[IEEE TITS](https://ieeexplore.ieee.org/document/10415310)] [[arXiv](https://arxiv.org/abs/2210.03571)] and
-  AR+IDM [[TR PartC](https://authors.elsevier.com/sd/article/S0968-090X(24)00240-7)] [[arXiv](https://arxiv.org/pdf/2307.03340.pdf)]
-  .
-- Codes are available: [[Github repo](https://github.com/Chengyuan-Zhang/IDM_Bayesian_Calibration)].
-- Presentation: [[recording](https://youtu.be/GIqcL6I7MsU)] [[poster](../files/TRB_poster_MA_IDM_Chengyuan_2022.pdf)].
+  [[arXiv](https://arxiv.org/abs/2305.12058)]
+  and [[Elesvier](https://www.sciencedirect.com/science/article/pii/S0957417423033821)].
+
+- Codes are available: [GitHub repo](https://github.com/KongMLin/C2DR).
+
+
 
 <br/>  
 
-## Spatiotemporal Learning of Multivehicle Interaction Patterns in Lane-Change Scenarios
+## C²DR: Robust Cross-Domain Recommendation based on Causal Disentanglement
 
-Chengyuan Zhang, Jiacheng Zhu, Wenshuo Wang, and Junqiang Xi. *IEEE Transaction on Intelligent Transportation Systems.*
+Menglin Kong, Jia Wang, Yushan Pan, Haiyang Zhang, Muzhou Hou. *WSDM'24.*
 
-[//]: # (<center>)
-
-[//]: # (  <img src="../images/GVF_framework.Png" width="85%" />)
-
-[//]: # (</center>)
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/AcyDn43hb7I" title="Demos for Spatiotemporal Learning of Multivehicle Interaction Patterns in Lane-Change Scenarios;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+### Images
+<div style="display: flex; flex-direction: row; gap: 20px; justify-content: center;">
+<img src="images/c2dr.pdf" alt="Figure 1: c2dr" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 5px;">
+</div>
 
 <details>
   <summary><b>[Abstract]</b></summary>
 
-Interpretation of common-yet-challenging interaction scenarios can benefit well-founded decisions for autonomous
-vehicles. Previous research achieved this using their prior knowledge of specific scenarios with predefined models,
-limiting their adaptive capabilities. This paper describes a Bayesian nonparametric approach that leverages continuous (
-i.e., Gaussian processes) and discrete (i.e., Dirichlet processes) stochastic processes to reveal underlying interaction
-patterns of the ego vehicle with other nearby vehicles. Our model relaxes dependency on the number of surrounding
-vehicles by developing an acceleration-sensitive velocity field based on Gaussian processes. The experiment results
-demonstrate that the velocity field can represent the _spatial_ interactions between the ego vehicle and its
-surroundings. Then, a discrete Bayesian nonparametric model, integrating Dirichlet processes and hidden Markov models,
-is developed to learn the interaction patterns over the _temporal_ space by segmenting and clustering the sequential
-interaction data into interpretable granular patterns automatically. We then evaluate our approach in the highway
-lane-change scenarios using the highD dataset collected from real-world settings. Results demonstrate that our proposed
-Bayesian nonparametric approach provides an insight into the complicated lane-change interactions of the ego vehicle
-with multiple surrounding traffic participants based on the interpretable interaction patterns and their transition
-properties in temporal relationships. Our proposed approach sheds light on efficiently analyzing other kinds of
-multi-agent interactions, such as vehicle-pedestrian interactions.
+Cross-domain recommendation aims to leverage heterogeneous information to transfers knowledge from a data-sufficient domain (source domain) to a data-scarce domain (target domain). Existing approaches mainly ignore the modeling of  users' domain specific preferences on items. We argue that incorporating domain-specific preferences from the source domain will introduce irrelevant information that fails to the target domain. Additionally, directly combining domain-shared and domain-specific information may hinder the target domain's performance. To this end, we propose $C^2DR$, a novel approach that disentangles domain-shared and domain-specific preferences from a causal perspective. Specifically, we formulate a causal graph to capture the critical causal relationships based on the underlying recommendation process, explicitly identifying domain-shared and domain-specific information as causal irrelevant variables. Then, we introduce disentanglement regularization terms to learn distinct representations of the causal variables that obey the independence constraints in the causal graph. Remarkably, our proposed method enables effective intervention and transfer of domain-shared information, thereby improving the robustness of the recommendation model. We evaluate the efficacy of $C^2DR$ through extensive experiments on three real-world datasets, demonstrating significant improvements over state-of-the-art baselines.
 </details>
 
-- Access our paper via: [[arXiv](https://arxiv.org/pdf/2003.00759v2.pdf)]
-  , [[paper](https://ieeexplore.ieee.org/document/9357407)],
-  or [[project website](https://chengyuan-zhang.github.io/Multivehicle-Interaction/)].
-- Watch the demos via: [[YouTube](https://youtu.be/AcyDn43hb7I)].
-- Code for implementing Gaussian Velocity
-  Field: [[Github repo](https://github.com/Chengyuan-Zhang/Gaussian_Velocity_Field)].
-- Also check the supplements via: [[Spatiotemporal_Appendix.pdf](./files/Spatiotemporal_Appendix.pdf)].
+- Access our paper via: [[ACM](https://dl.acm.org/doi/abs/10.1145/3616855.3635809)].
+- 
+- Codes are available: [GitHub repo](https://github.com/KongMLin/C2DR).
 
 <br/>
 
-## Social Interactions for Autonomous Driving: A Review and Perspective
 
-Wenshuo Wang, Letian Wang, Chengyuan Zhang, Changliu Liu, and Lijun Sun. *Foundations and Trends in Robotics*.
-
-<center>
-  <img src="../images/review_interaction_scene.JPG" width="60%" />
-</center>
-
-<details>
-  <summary><b>[Abstract]</b></summary>
-
-No human drives a car in a vacuum; she/he must negotiate with other road users to achieve their goals in social traffic
-scenes. A rational human driver can interact with other road users in a socially-compatible way through implicit
-communications to complete their driving tasks smoothly in interaction-intensive, safety-critical environments. This
-paper aims to review the existing approaches and theories to help understand and rethink the interactions among human
-drivers toward social autonomous driving. We take this survey to seek the answers to a series of fundamental questions:
-
-1) What is social interaction in road traffic scenes?
-2) How to measure and evaluate social interaction?
-3) How to model and reveal the process of social interaction?
-4) How do human drivers reach an implicit agreement and negotiate smoothly in social interaction?
-
-This paper reviews various approaches to modeling and learning the social interactions between human drivers, ranging
-from optimization theory, deep learning, and graphical models to social force theory and behavioral & cognitive science.
-We also highlight some new directions, critical challenges, and opening questions for future research.
-
-</details>
-
-- Access our book
-  via: [[ebook](https://www.nowpublishers.com/article/Details/ROB-078)], [[arXiv](https://arxiv.org/abs/2208.07541)],
-  or [[project website](https://chengyuan-zhang.github.io/Multivehicle-Interaction/)].
-
-<br/> 
-
-## An Efficient Parking Solution: A Cam-Linkage Double-Parallelogram Mechanism Based 1-Degrees of Freedom Stack Parking System
-
-Chengyuan Zhang, Xiaomin Zhang, Hongyun Ye, Ming Wei, and Xianxiong Ning. *ASME Journal of Mechanisms and Robotics*.
-
-<iframe width="1280" height="462" src="https://www.youtube.com/embed/lmwdDsUXUw8" title="An Efficient Parking Solution: A Novel Stack Parking System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-- This is a very interesting mechanical work (a.k.a. big toy) that was done during my undergraduate study.
-- Access our work
-  via: [[ASME JMR](https://doi.org/10.1115/1.4043688)].
-
-<br/> 
-
-Thanks & Fundings
-======
-<br>
-<center>
-    <img src="../images/FRQNT.png" width="37%" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="../images/ivado-cmyk_logo-full-degrade-730x245.png" width="37%" /><br>
-    <img src="../images/mitacs_transparent.png" width="37%" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="../images/CIRRELT_logo.png" width="37%" />
-</center>
