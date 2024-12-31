@@ -7,14 +7,26 @@
 
 # Site Settings
 locale                   : "en-CA"
-title                    : "Chengyuan Zhang - Homepage"
+title                    : "Menglin Kong - Homepage"
 title_separator          : "-"
-name                     : &name "Chengyuan ZHANG"
-description              : &description "I’m a Ph.D. candidate at McGill University under the supervision of Prof. Lijun Sun. I was a visiting researcher at the Robotics Institute, Carnegie Mellon University in 2023 under the supervision of Prof. Changliu Liu, and at the Department of Mechanical Engineering in 2018. Additionally, I conducted research at the Department of Mechanical Engineering, UC Berkeley from 2019 to 2020 under the supervision of Prof. Masayoshi Tomizuka."
-url                      : https://chengyuan-zhang.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Menglin Kong
+"
+description: |
+  I’m a Ph.D. student at McGill University under the supervision of Prof. [Lijun Sun](https://lijunsun.github.io/).
+  I received my Master's degree in Applied Statistics from Central South University in 2024, under the supervision
+  of Prof. [Muzhou Hou](https://faculty.csu.edu.cn/houmuzhou/en/index.htm). In 2021, I earned my Bachelor's degree
+  in Economic Statistics from Hainan University. 
+
+  My research interests include recommender systems, time series modeling, probabilistic machine learning, and Gaussian
+  processes. During my master's studies, my research focused on understanding the negative transfer issue in cross-domain
+  recommender systems from a statistical perspective and designing robust cross-domain recommender system models. Recently,
+  my research has shifted toward combining deep learning and statistical models to achieve efficient covariance learning
+  in spatiotemporal and multivariate process modeling.
+
+url                      : "https://merlinrise.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "Chengyuan-Zhang/chengyuan-zhang.github.io" # the github repository you're using
-teaser                   : "review_interaction_scene.JPG" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+repository               : "MerlinRise/merlin_riseup.github.io" # the github repository you're using
+teaser                   : "pages/photo1" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
@@ -80,15 +92,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Chengyuan Zhang"
-  avatar           : "Chengyuan.jpg"
-  bio              : "Ph.D. candidate in the Department of Civil Engineering, McGill University."
+  name             : "Menglin Kong"
+  avatar           : "menglin.jpg"
+  bio              : "Ph.D. student in the Department of Civil Engineering, McGill University."
   location         : "Montreal, QC, Canada"
   employer         : "McGill University"
   pubmed           :
-  googlescholar    : "https://scholar.google.com/citations?user=4Zgj2BkAAAAJ&hl=en"
-  email            : "enzozcy@gmail.com"
-  researchgate     : "https://www.researchgate.net/profile/Chengyuan-Zhang-4"  # example: "https://www.researchgate.net/profile/yourprofile"
+  googlescholar    : "https://scholar.google.com/citations?user=6_TaTiUAAAAJ&hl=en&oi=ao"
+  email            : "merlinlovecj@gmail.com"
+  researchgate     : "https://www.researchgate.net/profile/Menglin-Kong"  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,14 +108,14 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "Chengyuan-Zhang"
+  github           : "Menglin-Kong"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "cy-zhang"
-  orcid            : "https://orcid.org/0000-0001-8463-7380"
+  linkedin         : 
+  orcid            : "https://orcid.org/0009-0007-9498-693X"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
